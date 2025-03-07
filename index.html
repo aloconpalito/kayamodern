@@ -29,6 +29,22 @@
         .gallery {
             margin: 20px 0;
         }
+        .gallery-link {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .gallery-link:hover {
+            text-decoration: underline;
+        }
+        #gallery-section {
+            margin-top: 50px; /* Espacio para que no quede pegado al contenido superior */
+        }
+        #gallery-section h2 {
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -47,13 +63,22 @@
     <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
     <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.</p>
 
+    <!-- Galería inicial con enlace -->
     <div class="gallery">
+        <a href="#gallery-section" class="gallery-link" id="gallery-link">Ver galería de Akiyas antes y después</a>
         <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Casa remodelada">
-        <!-- Agrega más imágenes aquí si las tienes -->
     </div>
 
     <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
     <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
+
+    <!-- Nueva sección de galería más abajo -->
+    <div id="gallery-section">
+        <h2 id="gallery-title">Galería: Akiyas Antes y Después</h2>
+        <p id="gallery-text">Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.</p>
+        <!-- Por ahora solo una imagen; puedes agregar más -->
+        <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
+    </div>
 
     <!-- JavaScript -->
     <script>
@@ -62,31 +87,43 @@
             let title = document.getElementById("title");
             let slogan = document.getElementById("slogan");
             let description = document.getElementById("description");
+            let galleryLink = document.getElementById("gallery-link");
             let services = document.getElementById("services");
             let contact = document.getElementById("contact");
             let link = document.getElementById("link");
+            let galleryTitle = document.getElementById("gallery-title");
+            let galleryText = document.getElementById("gallery-text");
 
             if (language === "es") {
                 title.textContent = "Reviviendo Akiyas";
                 slogan.textContent = "Madera, cristal y naturaleza en cada rincón";
                 description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.";
+                galleryLink.textContent = "Ver galería de Akiyas antes y después";
                 services.textContent = "Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.";
                 contact.textContent = "¿Interesado? ";
                 link.textContent = "Contáctanos";
+                galleryTitle.textContent = "Galería: Akiyas Antes y Después";
+                galleryText.textContent = "Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.";
             } else if (language === "en") {
                 title.textContent = "Reviving Akiyas";
                 slogan.textContent = "Wood, glass, and nature in every corner";
                 description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in.";
+                galleryLink.textContent = "View gallery of Akiyas before and after";
                 services.textContent = "Services: Akiya purchase, custom design, sustainable remodeling.";
                 contact.textContent = "Interested? ";
                 link.textContent = "Contact us";
+                galleryTitle.textContent = "Gallery: Akiyas Before and After";
+                galleryText.textContent = "Here you can see how we transform abandoned houses into unique homes.";
             } else if (language === "jp") {
                 title.textContent = "秋屋を再生する";
                 slogan.textContent = "木、ガラス、自然がすべての隅に";
                 description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。";
+                galleryLink.textContent = "秋屋のビフォーアフターギャラリーを見る";
                 services.textContent = "サービス：秋屋の購入、カスタムデザイン、持続可能なリフォーム。";
                 contact.textContent = "興味がありますか？ ";
                 link.textContent = "お問い合わせください";
+                galleryTitle.textContent = "ギャラリー：秋屋のビフォーアフター";
+                galleryText.textContent = "ここでは、廃屋をユニークな住まいに変える方法をご覧いただけます。";
             }
         }
     </script>
