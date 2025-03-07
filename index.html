@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviviendo Akiyas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Importamos Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Playfair Display -->
     <style>
         .language-menu {
             position: fixed;
@@ -22,12 +22,14 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            font-family: 'Lora', serif; /* Tipografía coherente para toda la página */
-            color: #333; /* Color base para el texto */
+            font-family: 'Playfair Display', serif; /* Nueva tipografía */
+            font-size: 18px; /* Tamaño base más grande */
+            color: #3c2f2f; /* Marrón oscuro para el texto */
         }
         h1 {
-            color: #2b2b2b; /* Un gris oscuro más elegante */
-            font-weight: 700; /* Negrita para destacar */
+            color: #3c2f2f;
+            font-weight: 700;
+            font-size: 36px; /* Títulos más grandes */
         }
         .gallery {
             margin: 20px 0;
@@ -35,8 +37,8 @@
         .gallery-link {
             display: block;
             margin-bottom: 10px;
-            font-size: 18px;
-            color: #1a73e8; /* Azul elegante para enlaces */
+            font-size: 20px; /* Enlace más grande */
+            color: #1a73e8;
             text-decoration: none;
             cursor: pointer;
         }
@@ -49,6 +51,7 @@
         #gallery-section h2 {
             color: #555;
             font-weight: 700;
+            font-size: 28px; /* Subtítulos más grandes */
         }
 
         /* Estilo del panel lateral */
@@ -58,7 +61,7 @@
             left: 0;
             width: 250px;
             height: 100%;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(139, 69, 19, 0.3); /* Marrón tenue (madera) con transparencia */
             backdrop-filter: blur(5px);
             transform: translateX(-200px);
             transition: transform 0.3s ease;
@@ -75,16 +78,16 @@
             margin: 0;
         }
         .sidebar li {
-            margin: 20px 0;
+            margin: 25px 0; /* Más espacio entre elementos */
         }
         .sidebar a {
-            color: #f5f5f5; /* Blanco suave para mayor contraste */
+            color: #fff8e1; /* Blanco cálido para contraste */
             text-decoration: none;
-            font-size: 16px;
-            font-weight: 400; /* Peso normal para elegancia */
+            font-size: 18px; /* Tamaño más grande */
+            font-weight: 400;
         }
         .sidebar a:hover {
-            color: #1a73e8; /* Azul al pasar el cursor */
+            color: #1a73e8;
             text-decoration: underline;
         }
     </style>
