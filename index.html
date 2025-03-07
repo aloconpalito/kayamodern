@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviviendo Akiyas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .language-menu {
             position: fixed;
@@ -22,14 +22,14 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            font-family: 'Playfair Display', serif; /* Nueva tipografía */
-            font-size: 18px; /* Tamaño base más grande */
-            color: #3c2f2f; /* Marrón oscuro para el texto */
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: #3c2f2f;
         }
         h1 {
             color: #3c2f2f;
             font-weight: 700;
-            font-size: 36px; /* Títulos más grandes */
+            font-size: 36px;
         }
         .gallery {
             margin: 20px 0;
@@ -37,7 +37,7 @@
         .gallery-link {
             display: block;
             margin-bottom: 10px;
-            font-size: 20px; /* Enlace más grande */
+            font-size: 20px;
             color: #1a73e8;
             text-decoration: none;
             cursor: pointer;
@@ -51,17 +51,15 @@
         #gallery-section h2 {
             color: #555;
             font-weight: 700;
-            font-size: 28px; /* Subtítulos más grandes */
+            font-size: 28px;
         }
-
-        /* Estilo del panel lateral */
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             height: 100%;
-            background: rgba(139, 69, 19, 0.3); /* Marrón tenue (madera) con transparencia */
+            background: rgba(139, 69, 19, 0.3);
             backdrop-filter: blur(5px);
             transform: translateX(-200px);
             transition: transform 0.3s ease;
@@ -78,12 +76,12 @@
             margin: 0;
         }
         .sidebar li {
-            margin: 25px 0; /* Más espacio entre elementos */
+            margin: 25px 0;
         }
         .sidebar a {
-            color: #fff8e1; /* Blanco cálido para contraste */
+            color: #fff8e1;
             text-decoration: none;
-            font-size: 18px; /* Tamaño más grande */
+            font-size: 18px;
             font-weight: 400;
         }
         .sidebar a:hover {
@@ -95,7 +93,7 @@
 <body>
     <!-- Menú de idiomas -->
     <div class="language-menu">
-        <label for="language">Elige un idioma: </label>
+        <label for="language" id="language-label">Idioma</label>
         <select id="language" onchange="changeLanguage()">
             <option value="es">Español</option>
             <option value="en">English</option>
@@ -160,6 +158,7 @@
             let sidebarPortal = document.getElementById("sidebar-portal");
             let portalTitle = document.getElementById("portal-title");
             let portalText = document.getElementById("portal-text");
+            let languageLabel = document.getElementById("language-label"); // Nuevo elemento
 
             if (language === "es") {
                 title.textContent = "Reviviendo Akiyas";
@@ -178,6 +177,7 @@
                 sidebarPortal.textContent = "Portal de Clientes";
                 portalTitle.textContent = "Portal de Clientes";
                 portalText.textContent = "Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.";
+                languageLabel.textContent = "Idioma"; // Traducción en español
             } else if (language === "en") {
                 title.textContent = "Reviving Akiyas";
                 slogan.textContent = "Wood, glass, and nature in every corner";
@@ -195,6 +195,7 @@
                 sidebarPortal.textContent = "Client Portal";
                 portalTitle.textContent = "Client Portal";
                 portalText.textContent = "Exclusive access for clients: check the progress of your home renovation.";
+                languageLabel.textContent = "Language"; // Traducción en inglés
             } else if (language === "jp") {
                 title.textContent = "秋屋を再生する";
                 slogan.textContent = "木、ガラス、自然がすべての隅に";
@@ -212,6 +213,7 @@
                 sidebarPortal.textContent = "クライアントポータル";
                 portalTitle.textContent = "クライアントポータル";
                 portalText.textContent = "クライアント専用のアクセス：住宅リフォームの進捗状況を確認できます。";
+                languageLabel.textContent = "言語"; // Traducción en japonés
             }
         }
 
