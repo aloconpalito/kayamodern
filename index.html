@@ -6,11 +6,46 @@
     <title>Mi Primera Página Web</title>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Esta es mi primera página web en GitHub Pages.</p>
-</body>
-</html>
-<p>Este es mi texto inicial.<a href="https://www.ankiapp.com">Visita este sitio</a></p>
-<img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Una imagen genial">
+    <!-- Menú de selección de idioma -->
+    <label for="language">Elige un idioma: </label>
+    <select id="language" onchange="changeLanguage()">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="jp">日本語 (Japanese)</option>
+    </select>
+
+    <!-- Contenido con id para traducir -->
+    <h1 id="title">¡Hola, mundo!</h1>
+    <p id="text1">Esta es mi primera página web en GitHub Pages.</p>
+    <p id="text2">Este es mi texto inicial. <a id="link" href="https://www.ankiapp.com">Visita este sitio</a></p>
+    <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Una imagen genial">
+
+    <!-- JavaScript para cambiar el idioma -->
+    <script>
+        function changeLanguage() {
+            let language = document.getElementById("language").value;
+            let title = document.getElementById("title");
+            let text1 = document.getElementById("text1");
+            let text2 = document.getElementById("text2");
+            let link = document.getElementById("link");
+
+            if (language === "es") {
+                title.textContent = "¡Hola, mundo!";
+                text1.textContent = "Esta es mi primera página web en GitHub Pages.";
+                text2.textContent = "Este es mi texto inicial. ";
+                link.textContent = "Visita este sitio";
+            } else if (language === "en") {
+                title.textContent = "Hello, world!";
+                text1.textContent = "This is my first website on GitHub Pages.";
+                text2.textContent = "This is my initial text. ";
+                link.textContent = "Visit this site";
+            } else if (language === "jp") {
+                title.textContent = "こんにちは、世界！";
+                text1.textContent = "これはGitHub Pagesでの私の最初のウェブサイトです。";
+                text2.textContent = "これは私の最初のテキストです。 ";
+                link.textContent = "このサイトを訪ねる";
+            }
+        }
+    </script>
 </body>
 </html>
