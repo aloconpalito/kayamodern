@@ -35,7 +35,7 @@
             font-size: 18px;
             color: #0066cc;
             text-decoration: none;
-            cursor: pointer; /* Indica que es clickable */
+            cursor: pointer;
         }
         .gallery-link:hover {
             text-decoration: underline;
@@ -45,6 +45,42 @@
         }
         #gallery-section h2 {
             color: #555;
+        }
+
+        /* Estilo del panel lateral */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px; /* Ancho del panel expandido */
+            height: 100%; /* Cubre toda la altura */
+            background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+            backdrop-filter: blur(5px); /* Efecto de desenfoque */
+            transform: translateX(-200px); /* Oculto inicialmente */
+            transition: transform 0.3s ease; /* Animación suave */
+            z-index: 90; /* Debajo del menú de idiomas */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar:hover {
+            transform: translateX(0); /* Se expande al pasar el cursor */
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin: 20px 0;
+        }
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .sidebar a:hover {
+            color: #0066cc;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -59,12 +95,22 @@
         </select>
     </div>
 
+    <!-- Panel lateral -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#gallery-section" id="sidebar-gallery">Galería de Fotos</a></li>
+            <li><a href="#contact" id="sidebar-contact">Datos de Contacto</a></li>
+            <li><a href="#description" id="sidebar-description">Descripción del Negocio</a></li>
+            <li><a href="#services" id="sidebar-services">Otros Servicios</a></li>
+            <li><a href="#client-portal" id="sidebar-portal">Portal de Clientes</a></li>
+        </ul>
+    </div>
+
     <!-- Contenido principal -->
     <h1 id="title">Reviviendo Akiyas</h1>
     <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
-    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.</p>
+    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro.</p>
 
-    <!-- Galería inicial con enlace -->
     <div class="gallery">
         <a href="#gallery-section" class="gallery-link" id="gallery-link">Ver galería de Akiyas antes y después</a>
         <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Casa remodelada">
@@ -73,11 +119,17 @@
     <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
     <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
 
-    <!-- Sección de galería más abajo -->
+    <!-- Sección de galería -->
     <div id="gallery-section">
         <h2 id="gallery-title">Galería: Akiyas Antes y Después</h2>
         <p id="gallery-text">Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.</p>
         <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
+    </div>
+
+    <!-- Sección placeholder para portal de clientes -->
+    <div id="client-portal" style="margin-top: 50px;">
+        <h2 id="portal-title">Portal de Clientes</h2>
+        <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
     </div>
 
     <!-- JavaScript -->
@@ -94,44 +146,81 @@
             let link = document.getElementById("link");
             let galleryTitle = document.getElementById("gallery-title");
             let galleryText = document.getElementById("gallery-text");
+            let sidebarGallery = document.getElementById("sidebar-gallery");
+            let sidebarContact = document.getElementById("sidebar-contact");
+            let sidebarDescription = document.getElementById("sidebar-description");
+            let sidebarServices = document.getElementById("sidebar-services");
+            let sidebarPortal = document.getElementById("sidebar-portal");
+            let portalTitle = document.getElementById("portal-title");
+            let portalText = document.getElementById("portal-text");
 
             if (language === "es") {
                 title.textContent = "Reviviendo Akiyas";
                 slogan.textContent = "Madera, cristal y naturaleza en cada rincón";
-                description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.";
+                description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro.";
                 galleryLink.textContent = "Ver galería de Akiyas antes y después";
                 services.textContent = "Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.";
                 contact.textContent = "¿Interesado? ";
                 link.textContent = "Contáctanos";
                 galleryTitle.textContent = "Galería: Akiyas Antes y Después";
                 galleryText.textContent = "Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.";
+                sidebarGallery.textContent = "Galería de Fotos";
+                sidebarContact.textContent = "Datos de Contacto";
+                sidebarDescription.textContent = "Descripción del Negocio";
+                sidebarServices.textContent = "Otros Servicios";
+                sidebarPortal.textContent = "Portal de Clientes";
+                portalTitle.textContent = "Portal de Clientes";
+                portalText.textContent = "Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.";
             } else if (language === "en") {
                 title.textContent = "Reviving Akiyas";
                 slogan.textContent = "Wood, glass, and nature in every corner";
-                description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in.";
+                description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in. We preserve the Japanese essence while creating homes for the future.";
                 galleryLink.textContent = "View gallery of Akiyas before and after";
                 services.textContent = "Services: Akiya purchase, custom design, sustainable remodeling.";
                 contact.textContent = "Interested? ";
                 link.textContent = "Contact us";
                 galleryTitle.textContent = "Gallery: Akiyas Before and After";
                 galleryText.textContent = "Here you can see how we transform abandoned houses into unique homes.";
+                sidebarGallery.textContent = "Photo Gallery";
+                sidebarContact.textContent = "Contact Info";
+                sidebarDescription.textContent = "Business Description";
+                sidebarServices.textContent = "Other Services";
+                sidebarPortal.textContent = "Client Portal";
+                portalTitle.textContent = "Client Portal";
+                portalText.textContent = "Exclusive access for clients: check the progress of your home renovation.";
             } else if (language === "jp") {
                 title.textContent = "秋屋を再生する";
                 slogan.textContent = "木、ガラス、自然がすべての隅に";
-                description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。";
+                description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。日本の本質を守りながら、未来の住まいを創ります。";
                 galleryLink.textContent = "秋屋のビフォーアフターギャラリーを見る";
                 services.textContent = "サービス：秋屋の購入、カスタムデザイン、持続可能なリフォーム。";
                 contact.textContent = "興味がありますか？ ";
                 link.textContent = "お問い合わせください";
                 galleryTitle.textContent = "ギャラリー：秋屋のビフォーアフター";
                 galleryText.textContent = "ここでは、廃屋をユニークな住まいに変える方法をご覧いただけます。";
+                sidebarGallery.textContent = "フォトギャラリー";
+                sidebarContact.textContent = "連絡先情報";
+                sidebarDescription.textContent = "事業の説明";
+                sidebarServices.textContent = "その他のサービス";
+                sidebarPortal.textContent = "クライアントポータル";
+                portalTitle.textContent = "クライアントポータル";
+                portalText.textContent = "クライアント専用のアクセス：住宅リフォームの進捗状況を確認できます。";
             }
         }
 
-        // Desplazamiento suave
+        // Desplazamiento suave para el enlace de galería
         document.getElementById("gallery-link").addEventListener("click", function(event) {
-            event.preventDefault(); // Evita el salto instantáneo
+            event.preventDefault();
             document.getElementById("gallery-section").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Desplazamiento suave para los enlaces del panel lateral
+        document.querySelectorAll(".sidebar a").forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            });
         });
     </script>
 </body>
