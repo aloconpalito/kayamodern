@@ -7,21 +7,25 @@
     <style>
         /* Estilo para el menú de idiomas */
         .language-menu {
-            float: right;
-            margin: 10px; /* Espacio alrededor del menú */
+            position: fixed; /* Fija el menú en la pantalla */
+            top: 10px; /* Distancia desde la parte superior */
+            right: 10px; /* Distancia desde la derecha */
+            z-index: 100; /* Asegura que esté encima de otros elementos */
         }
 
         /* Estilo para la imagen */
         img {
-            display: block; /* Hace que la imagen sea un bloque para centrarla */
-            margin: 0 auto; /* Centra la imagen horizontalmente */
-            max-width: 100%; /* Limita el ancho al tamaño de la pantalla */
-            height: auto; /* Mantiene la proporción */
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
-        /* Opcional: Centrar todo el contenido */
+        /* Centrar el contenido */
         body {
-            text-align: center; /* Centra el texto y elementos inline */
+            text-align: center;
+            margin: 0; /* Elimina márgenes predeterminados */
+            padding: 20px; /* Agrega algo de espacio interno */
         }
     </style>
 </head>
@@ -36,7 +40,7 @@
         </select>
     </div>
 
-    <!-- Contenido con id para traducir -->
+    <!-- Contenido existente -->
     <h1 id="title">¡Hola, mundo!</h1>
     <p id="text1">Esta es mi primera página web en GitHub Pages.</p>
     <p id="text2">Este es mi texto inicial. <a id="link" href="https://www.ankiapp.com">Visita este sitio</a></p>
