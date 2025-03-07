@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página Web</title>
+    <style>
+        /* Estilo para el menú de idiomas */
+        .language-menu {
+            float: right;
+            margin: 10px; /* Espacio alrededor del menú */
+        }
+
+        /* Estilo para la imagen */
+        img {
+            display: block; /* Hace que la imagen sea un bloque para centrarla */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            max-width: 100%; /* Limita el ancho al tamaño de la pantalla */
+            height: auto; /* Mantiene la proporción */
+        }
+
+        /* Opcional: Centrar todo el contenido */
+        body {
+            text-align: center; /* Centra el texto y elementos inline */
+        }
+    </style>
 </head>
 <body>
     <!-- Menú de selección de idioma -->
-    <label for="language">Elige un idioma: </label>
-    <select id="language" onchange="changeLanguage()">
-        <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="jp">日本語 (Japanese)</option>
-    </select>
+    <div class="language-menu">
+        <label for="language">Elige un idioma: </label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="jp">日本語 (Japanese)</option>
+        </select>
+    </div>
 
     <!-- Contenido con id para traducir -->
     <h1 id="title">¡Hola, mundo!</h1>
