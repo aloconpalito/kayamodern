@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+    <title>Reviviendo Akiyas</title>
     <style>
-        /* Estilo para el menú de idiomas */
         .language-menu {
-            position: fixed; /* Fija el menú en la pantalla */
-            top: 10px; /* Distancia desde la parte superior */
-            right: 10px; /* Distancia desde la derecha */
-            z-index: 100; /* Asegura que esté encima de otros elementos */
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 100;
         }
-
-        /* Estilo para la imagen */
         img {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             max-width: 100%;
             height: auto;
         }
-
-        /* Centrar el contenido */
         body {
             text-align: center;
-            margin: 0; /* Elimina márgenes predeterminados */
-            padding: 20px; /* Agrega algo de espacio interno */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .gallery {
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Menú de selección de idioma -->
+    <!-- Menú de idiomas -->
     <div class="language-menu">
         <label for="language">Elige un idioma: </label>
         <select id="language" onchange="changeLanguage()">
@@ -40,36 +42,51 @@
         </select>
     </div>
 
-    <!-- Contenido existente -->
-    <h1 id="title">¡Hola, mundo!</h1>
-    <p id="text1">Esta es mi primera página web en GitHub Pages.</p>
-    <p id="text2">Este es mi texto inicial. <a id="link" href="https://www.ankiapp.com">Visita este sitio</a></p>
-    <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Una imagen genial">
+    <!-- Contenido principal -->
+    <h1 id="title">Reviviendo Akiyas</h1>
+    <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
+    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.</p>
 
-    <!-- JavaScript para cambiar el idioma -->
+    <div class="gallery">
+        <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Casa remodelada">
+        <!-- Agrega más imágenes aquí si las tienes -->
+    </div>
+
+    <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
+    <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
+
+    <!-- JavaScript -->
     <script>
         function changeLanguage() {
             let language = document.getElementById("language").value;
             let title = document.getElementById("title");
-            let text1 = document.getElementById("text1");
-            let text2 = document.getElementById("text2");
+            let slogan = document.getElementById("slogan");
+            let description = document.getElementById("description");
+            let services = document.getElementById("services");
+            let contact = document.getElementById("contact");
             let link = document.getElementById("link");
 
             if (language === "es") {
-                title.textContent = "¡Hola, mundo!";
-                text1.textContent = "Esta es mi primera página web en GitHub Pages.";
-                text2.textContent = "Este es mi texto inicial. ";
-                link.textContent = "Visita este sitio";
+                title.textContent = "Reviviendo Akiyas";
+                slogan.textContent = "Madera, cristal y naturaleza en cada rincón";
+                description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.";
+                services.textContent = "Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.";
+                contact.textContent = "¿Interesado? ";
+                link.textContent = "Contáctanos";
             } else if (language === "en") {
-                title.textContent = "Hello, world!";
-                text1.textContent = "This is my first website on GitHub Pages.";
-                text2.textContent = "This is my initial text. ";
-                link.textContent = "Visit this site";
+                title.textContent = "Reviving Akiyas";
+                slogan.textContent = "Wood, glass, and nature in every corner";
+                description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in.";
+                services.textContent = "Services: Akiya purchase, custom design, sustainable remodeling.";
+                contact.textContent = "Interested? ";
+                link.textContent = "Contact us";
             } else if (language === "jp") {
-                title.textContent = "こんにちは、世界！";
-                text1.textContent = "これはGitHub Pagesでの私の最初のウェブサイトです。";
-                text2.textContent = "これは私の最初のテキストです。 ";
-                link.textContent = "このサイトを訪ねる";
+                title.textContent = "秋屋を再生する";
+                slogan.textContent = "木、ガラス、自然がすべての隅に";
+                description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。";
+                services.textContent = "サービス：秋屋の購入、カスタムデザイン、持続可能なリフォーム。";
+                contact.textContent = "興味がありますか？ ";
+                link.textContent = "お問い合わせください";
             }
         }
     </script>
