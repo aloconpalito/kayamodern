@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviviendo Akiyas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Importamos Lora -->
     <style>
         .language-menu {
             position: fixed;
@@ -21,10 +22,12 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            font-family: Arial, sans-serif;
+            font-family: 'Lora', serif; /* Tipografía coherente para toda la página */
+            color: #333; /* Color base para el texto */
         }
         h1 {
-            color: #333;
+            color: #2b2b2b; /* Un gris oscuro más elegante */
+            font-weight: 700; /* Negrita para destacar */
         }
         .gallery {
             margin: 20px 0;
@@ -33,7 +36,7 @@
             display: block;
             margin-bottom: 10px;
             font-size: 18px;
-            color: #0066cc;
+            color: #1a73e8; /* Azul elegante para enlaces */
             text-decoration: none;
             cursor: pointer;
         }
@@ -45,6 +48,7 @@
         }
         #gallery-section h2 {
             color: #555;
+            font-weight: 700;
         }
 
         /* Estilo del panel lateral */
@@ -52,18 +56,18 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 250px; /* Ancho del panel expandido */
-            height: 100%; /* Cubre toda la altura */
-            background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
-            backdrop-filter: blur(5px); /* Efecto de desenfoque */
-            transform: translateX(-200px); /* Oculto inicialmente */
-            transition: transform 0.3s ease; /* Animación suave */
-            z-index: 90; /* Debajo del menú de idiomas */
+            width: 250px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transform: translateX(-200px);
+            transition: transform 0.3s ease;
+            z-index: 90;
             padding: 20px;
             box-sizing: border-box;
         }
         .sidebar:hover {
-            transform: translateX(0); /* Se expande al pasar el cursor */
+            transform: translateX(0);
         }
         .sidebar ul {
             list-style: none;
@@ -74,12 +78,13 @@
             margin: 20px 0;
         }
         .sidebar a {
-            color: #333;
+            color: #f5f5f5; /* Blanco suave para mayor contraste */
             text-decoration: none;
             font-size: 16px;
+            font-weight: 400; /* Peso normal para elegancia */
         }
         .sidebar a:hover {
-            color: #0066cc;
+            color: #1a73e8; /* Azul al pasar el cursor */
             text-decoration: underline;
         }
     </style>
@@ -126,7 +131,7 @@
         <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
     </div>
 
-    <!-- Sección placeholder para portal de clientes -->
+    <!-- Sección del portal de clientes -->
     <div id="client-portal" style="margin-top: 50px;">
         <h2 id="portal-title">Portal de Clientes</h2>
         <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
@@ -134,7 +139,6 @@
 
     <!-- JavaScript -->
     <script>
-        // Cambiar idioma
         function changeLanguage() {
             let language = document.getElementById("language").value;
             let title = document.getElementById("title");
@@ -208,13 +212,11 @@
             }
         }
 
-        // Desplazamiento suave para el enlace de galería
         document.getElementById("gallery-link").addEventListener("click", function(event) {
             event.preventDefault();
             document.getElementById("gallery-section").scrollIntoView({ behavior: "smooth" });
         });
 
-        // Desplazamiento suave para los enlaces del panel lateral
         document.querySelectorAll(".sidebar a").forEach(link => {
             link.addEventListener("click", function(event) {
                 event.preventDefault();
