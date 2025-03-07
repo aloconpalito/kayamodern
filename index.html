@@ -35,12 +35,13 @@
             font-size: 18px;
             color: #0066cc;
             text-decoration: none;
+            cursor: pointer; /* Indica que es clickable */
         }
         .gallery-link:hover {
             text-decoration: underline;
         }
         #gallery-section {
-            margin-top: 50px; /* Espacio para que no quede pegado al contenido superior */
+            margin-top: 50px;
         }
         #gallery-section h2 {
             color: #555;
@@ -72,16 +73,16 @@
     <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
     <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
 
-    <!-- Nueva sección de galería más abajo -->
+    <!-- Sección de galería más abajo -->
     <div id="gallery-section">
         <h2 id="gallery-title">Galería: Akiyas Antes y Después</h2>
         <p id="gallery-text">Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.</p>
-        <!-- Por ahora solo una imagen; puedes agregar más -->
         <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
     </div>
 
     <!-- JavaScript -->
     <script>
+        // Cambiar idioma
         function changeLanguage() {
             let language = document.getElementById("language").value;
             let title = document.getElementById("title");
@@ -126,6 +127,12 @@
                 galleryText.textContent = "ここでは、廃屋をユニークな住まいに変える方法をご覧いただけます。";
             }
         }
+
+        // Desplazamiento suave
+        document.getElementById("gallery-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita el salto instantáneo
+            document.getElementById("gallery-section").scrollIntoView({ behavior: "smooth" });
+        });
     </script>
 </body>
 </html>
