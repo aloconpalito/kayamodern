@@ -7,27 +7,194 @@
    viewBox="0 0 37585.922 37699.082"
    version="1.1"
    id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="logo-minka-modern.svg"
+   inkscape:export-filename="logo-minka-modern.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#ffffff"
+     inkscape:document-units="px"
+     inkscape:zoom="0.01"
+     inkscape:cx="26200"
+     inkscape:cy="16750"
+     inkscape:window-width="1440"
+     inkscape:window-height="776"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     showgrid="true"
+     inkscape:export-bgcolor="#ffffff00"
+     inkscape:clip-to-page="false" />
   <defs
      id="defs1">
     <color-profile
        name="SMPTE-RP-431-2-2007-DCI-P3"
        xlink:href="file:///System/Library/ColorSync/Profiles/DCI(P3)%20RGB.icc"
-       id="color-profile2" />
+       id="color-profile1" />
+    <linearGradient
+       id="linearGradient36"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop36" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop37" />
+    </linearGradient>
+    <rect
+       x="104500"
+       y="2900"
+       width="14500"
+       height="9100"
+       id="rect36" />
     <rect
        x="-17400"
        y="16600"
        width="49500"
        height="9500"
        id="rect35" />
+    <rect
+       x="-15900"
+       y="13100"
+       width="2900"
+       height="8200"
+       id="rect32" />
+    <rect
+       x="-39500"
+       y="19000"
+       width="59700"
+       height="7800"
+       id="rect4" />
+    <rect
+       x="-14900"
+       y="17300"
+       width="11500"
+       height="1700"
+       id="rect27" />
+    <rect
+       x="-19300"
+       y="18700"
+       width="49600"
+       height="8200"
+       id="rect26" />
+    <rect
+       x="-23500"
+       y="17500"
+       width="48200"
+       height="4400"
+       id="rect23" />
+    <rect
+       x="-19800"
+       y="18500"
+       width="47300"
+       height="4700"
+       id="rect22" />
+    <rect
+       x="-26100"
+       y="16400"
+       width="60700"
+       height="7100"
+       id="rect20" />
+    <rect
+       x="-25400"
+       y="14900"
+       width="59300"
+       height="11200"
+       id="rect19" />
+    <rect
+       x="-20800"
+       y="18100"
+       width="47500"
+       height="3000"
+       id="rect18" />
+    <rect
+       x="-22300"
+       y="16500"
+       width="52700"
+       height="6900"
+       id="rect17" />
+    <rect
+       x="-19400"
+       y="16800"
+       width="45700"
+       height="6500"
+       id="rect15" />
+    <rect
+       x="-16146.436"
+       y="15421.108"
+       width="11668.323"
+       height="9523.875"
+       id="rect14" />
+    <rect
+       x="-16745.621"
+       y="17470.949"
+       width="94.608025"
+       height="1324.5125"
+       id="rect13" />
+    <rect
+       x="-20119.973"
+       y="16304.116"
+       width="10974.531"
+       height="3185.1367"
+       id="rect12" />
+    <rect
+       x="-21665.238"
+       y="14191.204"
+       width="18574.709"
+       height="10816.851"
+       id="rect11" />
+    <rect
+       x="-21264.965"
+       y="18361.896"
+       width="43763.73"
+       height="6531.9004"
+       id="rect10" />
+    <rect
+       x="-20684.352"
+       y="17055.518"
+       width="41150.973"
+       height="6531.9004"
+       id="rect9" />
+    <rect
+       x="-20756.928"
+       y="16692.635"
+       width="43836.309"
+       height="7475.397"
+       id="rect8" />
     <color-profile
        name="SMPTE-RP-431-2-2007-DCI-P3"
        xlink:href="file:///System/Library/ColorSync/Profiles/DCI(P3)%20RGB.icc"
-       id="color-profile4" />
+       id="color-profile2" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient36"
+       id="linearGradient37"
+       x1="-17399.936"
+       y1="16601.252"
+       x2="-17383.141"
+       y2="16601.252"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
      transform="translate(16692.725,9003.1215)">
@@ -41,15 +208,16 @@
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#fafafa;stroke-width:1.18159;stroke-opacity:1"
        d="M 8780.961,-6622.545 -6581.4237,-8986.881 -6563.2384,22487.198 8921.106,20064.675 8769.7688,-6625.754 Z"
-       id="path5" />
+       id="path5"
+       sodipodi:nodetypes="cccccc" />
     <text
        xml:space="preserve"
        id="text35"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46553px;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect35);display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.195124;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:0.048781, 0.048781;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-       transform="matrix(2250.0658,0,0,1975.8308,39134203,-32774645)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46553px;font-family:Playfair;-inkscape-font-specification:Playfair;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect35);display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.175157;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:0.0437892, 0.0437892;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       transform="matrix(2250.0658,0,0,1975.8308,39137094,-32774645)"><tspan
          x="-17400"
-         y="16602.113"
-         id="tspan4">Minka Modern</tspan></text>
+         y="16602.128"
+         id="tspan2">Minka Modern</tspan></text>
     <ellipse
        style="fill:#000000;fill-opacity:1;stroke:#fafafa;stroke-width:325.809;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:81.4533, 81.4533;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="path41"
