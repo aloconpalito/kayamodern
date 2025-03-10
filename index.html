@@ -35,6 +35,11 @@
             font-weight: 700;
             font-size: 36px;
         }
+        #lema {
+            color: #000000; /* Negro para coincidir con el logo */
+            font-size: 18px;
+            margin: 10px 0; /* Espacio arriba y abajo */
+        }
         .gallery {
             margin: 20px 0;
         }
@@ -118,12 +123,13 @@
     </div>
 
     <!-- Logo de la empresa -->
-    <img src="logo-minka-modern5.svg" alt="Logo de Reviviendo Akiyas" class="logo">
+    <img src="logo-minka-modern4.svg" alt="Logo de Reviviendo Akiyas" class="logo">
+    <p id="lema">Preservamos la esencia japonesa mientras creamos hogares para el futuro.</p>
 
     <!-- Contenido principal -->
     <h1 id="title">Reviviendo Akiyas</h1>
     <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
-    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro.</p>
+    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.</p>
 
     <div class="gallery">
         <a href="#gallery-section" class="gallery-link" id="gallery-link">Ver galería de Akiyas antes y después</a>
@@ -153,6 +159,7 @@
             let title = document.getElementById("title");
             let slogan = document.getElementById("slogan");
             let description = document.getElementById("description");
+            let lema = document.getElementById("lema");
             let galleryLink = document.getElementById("gallery-link");
             let services = document.getElementById("services");
             let contact = document.getElementById("contact");
@@ -171,7 +178,8 @@
             if (language === "es") {
                 title.textContent = "Reviviendo Akiyas";
                 slogan.textContent = "Madera, cristal y naturaleza en cada rincón";
-                description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro.";
+                description.textContent = "Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza.";
+                lema.textContent = "Preservamos la esencia japonesa mientras creamos hogares para el futuro.";
                 galleryLink.textContent = "Ver galería de Akiyas antes y después";
                 services.textContent = "Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.";
                 contact.textContent = "¿Interesado? ";
@@ -189,7 +197,8 @@
             } else if (language === "en") {
                 title.textContent = "Reviving Akiyas";
                 slogan.textContent = "Wood, glass, and nature in every corner";
-                description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in. We preserve the Japanese essence while creating homes for the future.";
+                description.textContent = "We transform abandoned traditional Japanese homes (*akiyas*) into modern residences that blend the warmth of wood, the elegance of glass, and open spaces that invite nature in.";
+                lema.textContent = "We preserve the Japanese essence while creating homes for the future.";
                 galleryLink.textContent = "View gallery of Akiyas before and after";
                 services.textContent = "Services: Akiya purchase, custom design, sustainable remodeling.";
                 contact.textContent = "Interested? ";
@@ -207,7 +216,8 @@
             } else if (language === "jp") {
                 title.textContent = "秋屋を再生する";
                 slogan.textContent = "木、ガラス、自然がすべての隅に";
-                description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。日本の本質を守りながら、未来の住まいを創ります。";
+                description.textContent = "日本の伝統的な廃屋（秋屋）を、木の温もり、ガラスの優雅さ、そして自然を取り込む広々とした空間を融合させた現代的な住まいに変えます。";
+                lema.textContent = "日本の本質を守りながら、未来の住まいを創ります。";
                 galleryLink.textContent = "秋屋のビフォーアフターギャラリーを見る";
                 services.textContent = "サービス：秋屋の購入、カスタムデザイン、持続可能なリフォーム。";
                 contact.textContent = "興味がありますか？ ";
