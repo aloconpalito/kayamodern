@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="37585.922"
+   height="37699.082"
+   viewBox="0 0 37585.922 37699.082"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <color-profile
+       name="SMPTE-RP-431-2-2007-DCI-P3"
+       xlink:href="file:///System/Library/ColorSync/Profiles/DCI(P3)%20RGB.icc"
+       id="color-profile2" />
+    <rect
+       x="-17400"
+       y="16600"
+       width="49500"
+       height="9500"
+       id="rect35" />
+    <color-profile
+       name="SMPTE-RP-431-2-2007-DCI-P3"
+       xlink:href="file:///System/Library/ColorSync/Profiles/DCI(P3)%20RGB.icc"
+       id="color-profile4" />
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(16692.725,9003.1215)">
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.946183;stroke-opacity:1"
+       id="rect2"
+       width="17821.102"
+       height="31445.297"
+       x="-6510.5508"
+       y="-9002.6484" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#fafafa;stroke-width:1.18159;stroke-opacity:1"
+       d="M 8780.961,-6622.545 -6581.4237,-8986.881 -6563.2384,22487.198 8921.106,20064.675 8769.7688,-6625.754 Z"
+       id="path5" />
+    <text
+       xml:space="preserve"
+       id="text35"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46553px;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect35);display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.195124;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:0.048781, 0.048781;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       transform="matrix(2250.0658,0,0,1975.8308,39134203,-32774645)"><tspan
+         x="-17400"
+         y="16602.113"
+         id="tspan4">Minka Modern</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#fafafa;stroke-width:325.809;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:81.4533, 81.4533;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="path41"
+       cx="7175.5063"
+       cy="8147.4717"
+       rx="825.55939"
+       ry="822.37146" />
+  </g>
+</svg>
