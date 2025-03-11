@@ -129,50 +129,58 @@
         </select>
     </div>
 
-  <!-- Panel lateral -->
-<div class="sidebar">
-    <ul>
-        <li><a href="#gallery-section" id="sidebar-gallery">Galería de Fotos</a></li>
-        <li><a href="#contact" id="sidebar-contact">Datos de Contacto</a></li>
-        <li><a href="#description" id="sidebar-description">Descripción del Negocio</a></li>
-        <li><a href="#services" id="sidebar-services">Otros Servicios</a></li>
-        <li><a href="#client-portal" id="sidebar-portal">Portal de Clientes</a></li>
-    </ul>
-    <div class="icono">
-        <img src="hikitebrown.svg" alt="Fusuma Hikite" class="hikite">
-    </div>
-</div>    <!-- Logo de la empresa -->
-    <img src="logo-minka-modern5.svg" alt="Logo de Reviviendo Akiyas" class="logo">
-    <p id="lema">Conservando Japón, creamos futuro.</p>
-
-    <!-- Contenido principal -->
-    <h1 id="title">Reviviendo Akiyas</h1>
-    <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
-    <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro, colaborando con socios expertos en construcciones tradicionales japonesas, paisajismo y nuevas tecnologías de construcción. Esta unión nos permite integrar diversos puntos de vista para ofrecer soluciones únicas y sostenibles, adaptando cada proyecto según las necesidades y prioridades de nuestros clientes.</p>
-
-    <div class="gallery">
-        <a href="#gallery-section" class="gallery-link" id="gallery-link">Ver galería de Akiyas antes y después</a>
-        <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Casa remodelada">
+    <!-- Panel lateral -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#gallery-section" id="sidebar-gallery">Galería de Fotos</a></li>
+            <li><a href="#contact" id="sidebar-contact">Datos de Contacto</a></li>
+            <li><a href="#description" id="sidebar-description">Descripción del Negocio</a></li>
+            <li><a href="#services" id="sidebar-services">Otros Servicios</a></li>
+            <li><a href="#client-portal" id="sidebar-portal">Portal de Clientes</a></li>
+        </ul>
+        <div class="icono">
+            <img src="hikitebrown.svg" alt="Fusuma Hikite" class="hikite">
+        </div>
     </div>
 
-    <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
-    <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
+    <!-- Contenedor del contenido principal -->
+    <div class="main-content">
+        <!-- Logo de la empresa -->
+        <img src="logo-minka-modern5.svg" alt="Logo de Reviviendo Akiyas" class="logo">
+        <p id="lema">Guardamos Japón, creamos futuro.</p>
 
-    <!-- Sección de galería -->
-    <div id="gallery-section">
-        <h2 id="gallery-title">Galería: Akiyas Antes y Después</h2>
-        <p id="gallery-text">Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.</p>
-        <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
-    </div>
+        <!-- Contenido principal -->
+        <h1 id="title">Reviviendo Akiyas</h1>
+        <p id="slogan">Madera, cristal y naturaleza en cada rincón</p>
+        <p id="description">Transformamos casas tradicionales abandonadas (*akiyas*) en Japón en hogares modernos que combinan la calidez de la madera, la elegancia del cristal y espacios abiertos que invitan a la naturaleza. Preservamos la esencia japonesa mientras creamos hogares para el futuro, colaborando con socios expertos en construcciones tradicionales japonesas, paisajismo y nuevas tecnologías de construcción. Esta unión nos permite integrar diversos puntos de vista para ofrecer soluciones únicas y sostenibles, adaptando cada proyecto según las necesidades y prioridades de nuestros clientes.</p>
 
-    <!-- Sección del portal de clientes -->
-    <div id="client-portal" style="margin-top: 50px;">
-        <h2 id="portal-title">Portal de Clientes</h2>
-        <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
+        <div class="gallery">
+            <a href="#gallery-section" class="gallery-link" id="gallery-link">Ver galería de Akiyas antes y después</a>
+            <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Casa remodelada">
+        </div>
+
+        <p id="services">Servicios: Compra de akiyas, diseño personalizado, remodelación sostenible.</p>
+        <p id="contact">¿Interesado? <a id="link" href="mailto:tuemail@example.com">Contáctanos</a></p>
+
+        <!-- Sección de galería -->
+        <div id="gallery-section">
+            <h2 id="gallery-title">Galería: Akiyas Antes y Después</h2>
+            <p id="gallery-text">Aquí puedes ver cómo transformamos casas abandonadas en hogares únicos.</p>
+            <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
+        </div>
+
+        <!-- Sección del portal de clientes -->
+        <div id="client-portal" style="margin-top: 50px;">
+            <h2 id="portal-title">Portal de Clientes</h2>
+            <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
+        </div>
     </div>
 
     <!-- JavaScript -->
     <script>
+        // (Tu código JavaScript sigue igual aquí)
+    </script>
+</body>
         function changeLanguage() {
             let language = document.getElementById("language").value;
             let title = document.getElementById("title");
