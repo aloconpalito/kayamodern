@@ -6,117 +6,128 @@
     <title>Reviviendo Akiyas</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-    .language-menu {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 100;
-    }
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .logo {
-        max-width: 200px;
-        margin: 20px auto 0;
-    }
-    body {
-        text-align: center;
-        margin: 0;
-        padding: 20px;
-        font-family: 'Playfair Display', serif;
-        font-size: 18px;
-        color: #3c2f2f;
-    }
-    h1 {
-        color: #3c2f2f;
-        font-weight: 700;
-        font-size: 36px;
-    }
-    #lema {
-        color: #000000;
-        font-size: 16px;
-        margin: 10px 0;
-    }
-    .gallery {
-        margin: 20px 0;
-    }
-    .gallery-link {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 20px;
-        color: #1a73e8;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .gallery-link:hover {
-        text-decoration: underline;
-        color: #2e7d32;
-    }
-    #gallery-section {
-        margin-top: 50px;
-    }
-    #gallery-section h2 {
-        color: #555;
-        font-weight: 700;
-        font-size: 28px;
-    }
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        background: rgba(139, 69, 19, 0.3);
-        backdrop-filter: blur(5px);
-        transform: translateX(-200px);
-        transition: transform 0.3s ease;
-        z-index: 90;
-        padding: 20px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .sidebar:hover {
-        transform: translateX(0);
-    }
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .sidebar li {
-        margin: 25px 0;
-    }
-    .sidebar a {
-        color: #fff8e1;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .sidebar a:hover {
-        color: #2e7d32;
-        text-decoration: underline;
-    }
-    .icono {
-        margin-top: 20px;
-        text-align: center;
-    }
-    .hikite {
-        opacity: 0.7;
-        width: 70px;
-        height: auto;
-    }
-    .main-content {
-        transition: filter 0.3s ease;
-    }
-    .sidebar:hover ~ .main-content {
-        filter: blur(3px);
-    }
-</style>
+        .language-menu {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 100;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .logo {
+            max-width: 200px;
+            margin: 20px auto 0;
+        }
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: #3c2f2f;
+        }
+        h1 {
+            color: #3c2f2f;
+            font-weight: 700;
+            font-size: 36px;
+        }
+        #lema {
+            color: #000000;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .gallery {
+            margin: 20px 0;
+        }
+        .gallery-link {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #1a73e8;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .gallery-link:hover {
+            text-decoration: underline;
+            color: #2e7d32;
+        }
+        #gallery-section {
+            margin-top: 50px;
+        }
+        #gallery-section h2 {
+            color: #555;
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background: rgba(139, 69, 19, 0.3);
+            backdrop-filter: blur(5px);
+            transform: translateX(-200px);
+            transition: transform 0.3s ease;
+            z-index: 90;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sidebar:hover {
+            transform: translateX(0);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin: 10px 0;
+        }
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #8b4513;
+            color: #fff8e1;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+        .sidebar button:hover {
+            background-color: #a0522d;
+        }
+        .sidebar button:active {
+            transform: translateY(2px);
+            background-color: #5c4033;
+        }
+        .icono {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .hikite {
+            opacity: 0.7;
+            width: 70px;
+            height: auto;
+        }
+        .main-content {
+            transition: filter 0.3s ease;
+        }
+        .sidebar:hover ~ .main-content {
+            filter: blur(3px);
+        }
+    </style>
 </head>
 <body>
     <!-- Menú de idiomas -->
@@ -132,11 +143,11 @@
     <!-- Panel lateral -->
     <div class="sidebar">
         <ul>
-            <li><a href="#gallery-section" id="sidebar-gallery">Galería de Fotos</a></li>
-            <li><a href="#contact" id="sidebar-contact">Datos de Contacto</a></li>
-            <li><a href="#description" id="sidebar-description">Descripción del Negocio</a></li>
-            <li><a href="#services" id="sidebar-services">Otros Servicios</a></li>
-            <li><a href="#client-portal" id="sidebar-portal">Portal de Clientes</a></li>
+            <li><button data-target="gallery-section" id="sidebar-gallery">Galería de Fotos</button></li>
+            <li><button data-target="contact" id="sidebar-contact">Datos de Contacto</button></li>
+            <li><button data-target="description" id="sidebar-description">Descripción del Negocio</button></li>
+            <li><button data-target="services" id="sidebar-services">Otros Servicios</button></li>
+            <li><button data-target="client-portal" id="sidebar-portal">Portal de Clientes</button></li>
         </ul>
         <div class="icono">
             <img src="hikitebrown.svg" alt="Fusuma Hikite" class="hikite">
@@ -169,12 +180,12 @@
             <img src="usamaseo04_Modern_japapi_style_home_library_interior_design_wit_a269c1c1-2cc7-4fdb-b81d-677b7a21c217.png" alt="Antes y después ejemplo">
         </div>
 
-            <!-- Sección del portal de clientes -->
-    <div id="client-portal" style="margin-top: 50px;">
-        <h2 id="portal-title">Portal de Clientes</h2>
-        <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
+        <!-- Sección del portal de clientes -->
+        <div id="client-portal" style="margin-top: 50px;">
+            <h2 id="portal-title">Portal de Clientes</h2>
+            <p id="portal-text">Acceso exclusivo para clientes: consulta el progreso de la remodelación de tu vivienda.</p>
+        </div>
     </div>
-    </div> <!-- Cierre del main-content -->
 
     <!-- JavaScript -->
     <script>
@@ -264,10 +275,9 @@
             document.getElementById("gallery-section").scrollIntoView({ behavior: "smooth" });
         });
 
-        document.querySelectorAll(".sidebar a").forEach(link => {
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("href").substring(1);
+        document.querySelectorAll(".sidebar button").forEach(button => {
+            button.addEventListener("click", function(event) {
+                const targetId = this.getAttribute("data-target");
                 document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
             });
         });
