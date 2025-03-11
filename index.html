@@ -6,111 +6,117 @@
     <title>Reviviendo Akiyas</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        .language-menu {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 100;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-        }
-        .logo {
-            max-width: 200px;
-            margin: 20px auto 0;
-        }
-        body {
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            color: #3c2f2f;
-        }
-        h1 {
-            color: #3c2f2f;
-            font-weight: 700;
-            font-size: 36px;
-        }
-        #lema {
-            color: #000000;
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        .gallery {
-            margin: 20px 0;
-        }
-        .gallery-link {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 20px;
-            color: #1a73e8;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .gallery-link:hover {
-            text-decoration: underline;
-            color: #2e7d32;
-        }
-        #gallery-section {
-            margin-top: 50px;
-        }
-        #gallery-section h2 {
-            color: #555;
-            font-weight: 700;
-            font-size: 28px;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100%;
-            background: rgba(139, 69, 19, 0.3);
-            backdrop-filter: blur(5px);
-            transform: translateX(-200px);
-            transition: transform 0.3s ease;
-            z-index: 90;
-            padding: 20px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .sidebar:hover {
-            transform: translateX(0);
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .sidebar li {
-            margin: 25px 0;
-        }
-        .sidebar a {
-            color: #fff8e1;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 400;
-        }
-        .sidebar a:hover {
-            color: #2e7d32;
-            text-decoration: underline;
-        }
-        .hikite {
-            width: 70px;
-            opacity: 0.7;
-            height: auto;
-        }
-        .icono {
-            margin-top: 20px;
-            text-align: center;
-        }
-    </style>
+    .language-menu {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .logo {
+        max-width: 200px;
+        margin: 20px auto 0;
+    }
+    body {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        color: #3c2f2f;
+    }
+    h1 {
+        color: #3c2f2f;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    #lema {
+        color: #000000;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .gallery {
+        margin: 20px 0;
+    }
+    .gallery-link {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #1a73e8;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .gallery-link:hover {
+        text-decoration: underline;
+        color: #2e7d32;
+    }
+    #gallery-section {
+        margin-top: 50px;
+    }
+    #gallery-section h2 {
+        color: #555;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background: rgba(139, 69, 19, 0.3);
+        backdrop-filter: blur(5px);
+        transform: translateX(-200px);
+        transition: transform 0.3s ease;
+        z-index: 90;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sidebar:hover {
+        transform: translateX(0);
+    }
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar li {
+        margin: 25px 0;
+    }
+    .sidebar a {
+        color: #fff8e1;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .sidebar a:hover {
+        color: #2e7d32;
+        text-decoration: underline;
+    }
+    .icono {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hikite {
+        opacity: 0.7;
+        width: 50px;
+        height: auto;
+    }
+    .main-content {
+        transition: filter 0.3s ease;
+    }
+    .sidebar:hover ~ .main-content {
+        filter: blur(3px);
+    }
+</style>
 </head>
 <body>
     <!-- Menú de idiomas -->
